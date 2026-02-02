@@ -115,9 +115,10 @@
       </ul>
       <hr noShade size=3.5>
       <a name="research"></a>
-      <h3>Research Interests</h3> I am interested in theorem proving (Coq and Isabelle/HOL), compiler/OS formal verification. Especially, Linux eBPF-related verification~ <ul>
+      <h3>Research Interests</h3> I am interested in theorem proving (Coq, Isabelle/HOL, and Lean4), compiler/OS formal verification. Especially, eBPF-related verification~ <ul>
       </ul>
       <h3>Current Research</h3>
+
       <ul>
         <li class="item">
           <a>Compiler Verification (CompCert-related)</a>
@@ -129,7 +130,7 @@
              JIT (Just-In-Time) Compiler [<a href="https://link.springer.com/chapter/10.1007/978-3-031-65627-9_16">CAV2024</a>]
             </li>
             <li class="item">
-             EVM JIT Compiler (TBC)
+             EVM AOT Compiler (TBC)
             </li>
           </ul>
         </li>
@@ -140,7 +141,7 @@
               RIOT-OS rBPF VM [<a href="https://dl.acm.org/doi/abs/10.1145/3528535.3565242">MIDDLEWARE2022</a>], bootloader [<a href="https://ieeexplore.ieee.org/document/9814956">MEMOCODE2021</a>]
             </li>
             <li class="item">
-              <a href="https://github.com/solana-labs/rbpf">Solana Blockchain VM</a>  [<a href="https://link.springer.com/chapter/10.1007/978-981-96-0602-3_11">SETTA2024</a>, <a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2025.pdf">OOPSLA2025</a>]
+              <a href="https://github.com/solana-labs/rbpf">Solana Blockchain VM</a>  [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2025.pdf">OOPSLA2025</a>]
             </li>
             <li class="item">
               Linux eBPF (WIP)
@@ -155,22 +156,62 @@
           </ul>
         </li>
       </ul>
+
+      <h3>Action within Practice</h3> Our research should make real-world software better: e.g. find issues, present soluations, and so on~ <ul>
+      </ul>
+      
+      <ul>
+        <li class="item">
+          <a>Linux Patches</a>
+          <ul>
+            <li class="item">
+             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=55c0ced59fe1">bpf: Reject negative offsets for ALU ops</a>
+            </li>
+            <li class="item">
+             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=44fdd581d273">bpf: Add range tracking for BPF_DIV and BPF_MOD</a> and related  <a href="https://git.kernel.org/bpf/bpf-next/c/c9e440bf25a7">selftests</a>
+            </li>
+            <li class="item">
+             (TBC)
+            </li>
+          </ul>
+        </li>
+        <li class="item">
+          <a>Solana Issues</a>
+          <ul>
+            <li class="item">
+              <a href="https://github.com/solana-labs/rbpf/issues/562">assembler: register inconsistency</a>
+            </li>
+            <li class="item">
+              <a href="https://github.com/solana-labs/rbpf/issues/563">Interpreter LD_DW_IMM: add !sbpf_version.disable_lddw() checking</a>
+            </li>
+            <li class="item">
+              <a href="https://github.com/anza-xyz/sbpf/pull/78">Cleanup - unused JIT-generated instruction</a> 
+            </li>
+            <li class="item">
+              <a href="https://github.com/anza-xyz/sbpf/pull/68">Feature - Expand X86Instruction::opcode field to to optimize multiplications</a> 
+            </li>
+          </ul>
+      </ul>
+
       <hr noShade size=3.5>
       <a name="project"></a>
       <h3>Projects</h3> I join the <a href="https://trust2proj.github.io/">TRust<sup>2</sup></a> project currently, working on formal verification of Rust. The Solana verification is a part of TRust<sup>2</sup>: the Solana eBPF VM is a real-world Rust case study.
       <ul>
         <li class="item">
-          <a>2025-01 to 2025-12: <b>End-to-end formal verification of Solana eBPF JIT Compiler</b> (<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/projects/solana_jit_rust_overview.png">Overivew</a>) [<a href="https://www.ccf.org.cn/Collaboration/Enterprise_Fund/News/hw/2024-10-31/832702.shtml">2024CCF-Huawei Populus Grove Fund: Formal Method Track (News in Chinese)</a>] </a>
-          <ul>
-            <li class="item">
-             Task-1: verify Solana x64 JIT compiler in Isabelle/HOL
-            </li>
-            <li class="item">
-             Task-2: implement a parser (from Rust MIR to Isabelle/HOL) in Rust
-            </li>
-          </ul>
+          <a>2025-01 to 2025-12: <b>End-to-end formal verification of Solana eBPF JIT Compiler.</b> (<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/projects/solana_jit_rust_overview.png">Overivew</a>) [<a href="https://www.ccf.org.cn/Collaboration/Enterprise_Fund/News/hw/2024-10-31/832702.shtml">2024CCF-Huawei Populus Grove Fund: Formal Method Track (News in Chinese)</a>] </a>
         </li>
       </ul>
+      <ul>
+        <li class="item">
+          <a>2026-01 to 2028-12: <b>Mechanized Safety Proof of an eBPF Virtual Machine.</b> National Science Foundation for Young Scientists of China </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="item">
+          <a>2025-xx to 2026-xx: <b>Porting an eBPF JIT Compiler to RISC-V for Solana.</b> Open Source Project for Solana [<a href="https://github.com/shenghaoyuan/rbpf/tree/riscv">repo</a>] </a>
+        </li>
+      </ul>
+      
       <hr noShade size=3.5>
       <a name="publication"></a>
       <h3>Selected Publications [<a href="https://dblp.org/pid/264/2591.html">DBLP</a>] [<a href="https://scholar.google.com/citations?user=jL24x3sAAAAJ&hl=en">Google Scholar</a>] (* = corresponding author) </h3>
@@ -178,7 +219,7 @@
 
         <li style="margin-bottom: 10px;">
           <a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2025.pdf">OOPSLA2025: A complete formal semantics of eBPF instruction set architecture for Solana</a>
-          <br><b>Shenghao Yuan</b>, Zhuoruo Zhang, Jiayi Lu, David Sanan, Rui Chang, Yongwang Zhao <br>
+          <br><b>Shenghao Yuan</b>, Zhuoruo Zhang, Jiayi Lu, David Sanan, Rui Chang, Yongwang Zhao* <br>
           In ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Applications (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2025.pdf">local copy</a>]
         </li> 
 
