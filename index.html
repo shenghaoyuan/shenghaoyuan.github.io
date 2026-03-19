@@ -108,13 +108,19 @@
           <a>PhD. Sept.2020 - Dec.2023, Computer Science (Co-advisors: <a href="https://www.irisa.fr/prive/talpin/">Jean-Pierre Talpin</a> and <a href="https://people.rennes.inria.fr/Frederic.Besson/">Frédéric Besson</a>)</a>
           <ul>
             <li class="item"> The Time, Events and Architectures(TEA) team,
-             Université de Rennes / Inria-Rennes, Franch
+             Université de Rennes / Inria-Rennes, France
             </li>
           </ul>
         </li>
       </ul>
       <hr noShade size=3.5>
       <a name="research"></a>
+      <h3>Serment des docteurs relatif à l'intégrité scientifique (English version: Doctoral Oath on Scientific Integrity; 中文版本: 博士科学诚信誓言)</h3> At the end of the defence and in case of admission, I takes an oath, individually committing myself to respect the principles and requirements of scientific integrity in the rest of my professional career, whatever the sector or area of activity. 
+       <ul>
+        <li class="item">
+          <a><b>The text of the oath is as follows: In the presence of my peers. With the completion of my doctorate in computer science, in my quest for knowledge, I have carried out demanding research, demonstrated intellectual rigour, ethical reflection and respect for the principles of research integrity. As I pursue my professional career, whatever my chosen field, I pledge to the greatest of my ability to continue to maintain integrity in my relationship to knowledge, in my methods and in my results.</b></a>
+        </li>
+      </ul>
       <h3>Research Interests</h3> I am interested in theorem proving (Coq, Isabelle/HOL, and Lean4), compiler/OS formal verification. Especially, eBPF-related verification~ <ul>
       </ul>
       <h3>Current Research</h3>
@@ -165,10 +171,16 @@
           <a>Linux Patches</a>
           <ul>
             <li class="item">
-             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=55c0ced59fe1">bpf: Reject negative offsets for ALU ops</a>
+             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=55c0ced59fe1">bpf: Reject negative offsets for ALU ops</a> <a href="https://www.cve.org/CVERecord?id=CVE-2025-40169">(CVE-2025-40169)</a>
             </li>
             <li class="item">
              <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=44fdd581d273">bpf: Add range tracking for BPF_DIV and BPF_MOD</a> and related  <a href="https://git.kernel.org/bpf/bpf-next/c/c9e440bf25a7">selftests</a>
+            </li>
+            <li class="item">
+             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=9d21199842247ab05c675fb9b6c6ca393a5c0024">bpf: Add bitwise tracking for BPF_END</a> and related  <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=56415363e02f0f561ecc5bda6a4318438f888b43">selftests</a> <a href="https://lore.kernel.org/bpf/AMBPR06MB108683CFEB1CB8D9E02FC95ECF17EA@AMBPR06MB10868.eurprd06.prod.outlook.com/">(bad news: introduce another issue; BUT now has been fixed)</a>
+            </li>
+            <li class="item">
+             <a href="https://lore.kernel.org/bpf/20260316190220.113417-1-tangyazhou@zju.edu.cn/">bpf: reject bpf-to-bpf call with large offset in interpreter</a> <a>(Working on a better solution)</a>
             </li>
             <li class="item">
              (TBC)
@@ -189,6 +201,9 @@
             </li>
             <li class="item">
               <a href="https://github.com/anza-xyz/sbpf/pull/68">Feature - Expand X86Instruction::opcode field to to optimize multiplications</a> 
+            </li>
+            <li class="item">
+              <a href="https://github.com/anza-xyz/sbpf/pull/131">Cleanup - Remove unreachable None branch in emit_profile_instruction_count</a> 
             </li>
           </ul>
       </ul>
@@ -215,6 +230,7 @@
       <hr noShade size=3.5>
       <a name="publication"></a>
       <h3>Selected Publications [<a href="https://dblp.org/pid/264/2591.html">DBLP</a>] [<a href="https://scholar.google.com/citations?user=jL24x3sAAAAJ&hl=en">Google Scholar</a>] (* = corresponding author) </h3>
+      <br>Perhaps it is often assumed that the future work section in a paper merely outlines ideas that may never be pursued. I would like to clarify that when I discuss future work, I am either <span style="color: red;">actively carrying out those follow-up studies</span> or explaining here why I have chosen to move in a different direction.<br>
       <ul>
 
         <li style="margin-bottom: 10px;">
@@ -233,25 +249,28 @@
           <a href="https://link.springer.com/chapter/10.1007/978-3-031-65627-9_16">CAV2024: End-to-end Mechanized Proof of a JIT-accelerated eBPF Virtual Machine for IoT</a>
           <br><b>Shenghao Yuan*</b>, Frédéric Besson, Jean-Pierre Talpin <br>
           In 36th International Conference on Computer-Aided Verification (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV2024.pdf">local copy</a>]
+          <br><b>Future Work: </b>No progress. I noticed that EVM and Solana are actually using this hybrid solution, which suggests that a fully JIT-compiled approach may not be strictly necessary. By the way, this was my final work during my Ph.D. <span style="color: red;">After that, I shifted my focus to Solana and Linux eBPF</span>, see OOPSLA2025<br>
         </li> 
 
         <li style="margin-bottom: 10px;">
           <a href="https://link.springer.com/chapter/10.1007/978-981-99-8664-4_22">SETTA2023: Making an eBPF Virtual Machine Faster on Microcontrollers: Verified Optimization and Proof Simplification</a>
           <br><b>Shenghao Yuan*</b>, Benjamin Lion, Frédéric Besson, Jean-Pierre Talpin <br>
           In 9th Symposium on Dependable Software Engineering: Theories, Tools and Applications (CCF-C conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/SETTA23_draft.pdf">local copy</a>]
-          <br>(An invited extension to Journal of Systems Architecture, CCF-B journal) <br>
+          <br><b>Future Work:</b>No progress. One reason is that LLM could do something like AutoCorres, and I was interested in Rust after Ph.D.<br>
         </li>
 
         <li style="margin-bottom: 10px;">
           <a href="https://link.springer.com/chapter/10.1007/978-3-031-13188-2_15">CAV2022: End-to-end Mechanised Proof of an eBPF Virtual Machine for Microcontrollers</a>
           <br><b>Shenghao Yuan*</b>, Frédéric Besson, Jean-Pierre Talpin, Samuel Hym, Koen Zandberg, Emmanuel Baccelli <br>
           In 34th International Conference on Computer-Aided Verification (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV2022.pdf">local copy</a>] [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV22_0809.pptx">slide</a>]
+          <br><b>Future Work:</b> <span style="color: red;">Working on verified eBPF JIT</span>, see CAV2024 <br>
         </li> 
 
         <li style="margin-bottom: 10px;">
           <a href="https://www.sciencedirect.com/science/article/abs/pii/S016764232100037X">SCP2021: Multi-task Ada code generation from synchronous dataflow programs on multi-core: Approach and industrial study</a>
           <br>Zhibin Yang*, <b>Shenghao Yuan</b>, Jean-Paul Bodeveix, Mamoun Filali, Tiexin Wang, Yong Zhou <br>
           Science of Computer Programming (CCF-B journal) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/scpmain.pdf">local copy</a>]
+          <br><b>Future Work:</b> No progress. as I have since shifted my focus to my PhD topic, and no one else has shown interest in pursuing this line of work.<br>
         </li> 
       </ul>
     <hr noShade size=3.5>
