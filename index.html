@@ -1,330 +1,145 @@
-<html xmlns="http://www.w3.org/1999/html">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J23RK0R02"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Shenghao Yuan</title>
+  <meta name="description" content="Shenghao Yuan, researcher at Zhejiang University. Formal verification, eBPF, compilers, virtual machines, and Rust.">
+  <link rel="canonical" href="https://shenghaoyuan.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home | Shenghao Yuan">
+  <meta property="og:description" content="Shenghao Yuan, researcher at Zhejiang University. Formal verification, eBPF, compilers, virtual machines, and Rust.">
+  <meta property="og:url" content="https://shenghaoyuan.github.io/">
+  <meta property="og:image" content="https://shenghaoyuan.github.io/img/profile.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="auto.js" defer></script>
+  <script src="publications-data.js" defer></script>
+  <script src="news-data.js" defer></script>
+  <script src="content-renderer.js" defer></script>
+  <script src="authors.js" defer></script>
+  <script src="publications.js" defer></script>
+  <!-- Existing analytics configuration. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J23RK0R02"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-2J23RK0R02');
+  </script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="site-title" href="index.html">Shenghao Yuan</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menu</span></button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="projects.html">Projects &amp; Open Source</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-2J23RK0R02');
-    </script>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="description" content="homepage">
-    <link rel="stylesheet" type="text/css" href="
-    style.css">
-    <script src="auto.js"></script>
-  </head>
-  <body>
-    <div class="content">
-      <table align=center cellpadding=35>
-        <tr>
-          <td style="text-align: center;">
-            <img src="img/shenghao.jpg" width="150" alt="Photo">
-            <figcaption style="text-align: center;"><b> "Master 2nd year: Young" </b>, 2018 in ChongQin (attending the FMAC conf), photoed by family </figcaption>
-          </td>
-          <td style="text-align: center;">
-            <img src="img/profile.jpg" width="200" alt="Photo">
-            <figcaption style="text-align: center;"><b> "PhD 2nd year: Foolish Grin" </b>, 2021 in Rennes, photoed by Dr. <a href="https://yichangwang.github.io/">Yichang Wang</a> </figcaption>
-          </td>
-          <td style="text-align: center;">
-            <img src="img/chinasoft2024.jpg" width="300" alt="Photo">
-            <figcaption style="text-align: center;"><b> "Researcher 1st year: Serious" </b>, 2024 in Xi'an (attending the ChinaSoft conf), photoed by ChinaSoft official staff </figcaption>
-          </td>
-          <Td>
-            <H2>Shenghao YUAN </H2> Researcher, Zhejiang University <br> <!-- 
-            <br>School of Cyber Science and Technology<br>
-            <a href="https://www.zju.edu.cn/english/">Zhejiang University</a> -->
-            <br> Email:
-            <del>
-              <a href="mailto:shenghao.yuan@inria.fr">shenghao.yuan@inria.fr</a>(Deprecated)
-            </del> / 
-            <a href = "mailto: nuaaysh@126.com">nuaaysh@126.com</a>
-            <br>
-            <br> Open Source Software:
-            <a href="https://gitlab.inria.fr/X-Syuan">GitLab (read-only)</a>	/ 
-            <a href="https://github.com/shenghaoyuan">GitHub</a> / <a href="https://github.com/OpenSourceVerif">GitHub Organization</a>
-            <br>
-            <br> 
-            <a
-            id="cy-effective-orcid-url"
-            class="underline"
-             href="https://orcid.org/0000-0002-8467-5827"
-             target="orcid.widget"
-             rel="me noopener noreferrer"
-             style="vertical-align: top">
-             <img
-                src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-                style="width: 1em; margin-inline-start: 0.5em"
-                alt="ORCID iD icon"/>
-              https://orcid.org/0000-0002-8467-5827
-            </a>
-            <br>
-            <br>
-          </td>
-        </tr>
-      </table>
-      <hr>
-      <center>
-        [ <a href="#education">
-          <big>
-            <b>Education</b>
-          </big>
-        </a>]
-        [ <a href="#work">
-          <big>
-            <b>Work</b>
-          </big>
-        </a>]
-        [ <a href="#research">
-          <big>
-            <b>Research</b>
-          </big>
-        </a>]
-        [ <a href="#project">
-          <big>
-            <b>Projects</b>
-          </big>
-        </a>]
-        [ <a href="#publication">
-          <big>
-            <b>Publications</b>
-          </big>
-        </a>]
-      </center>
-      <hr noShade size=3.5>
-      <a name="education"></a>
-      <h3>Education </h3>
-      <ul>
-      	<li class="item">
-          <a>Undergraduate. Sept.2013 - Jun.2017, Software Engineering</a>
-          <ul>
-            <li class="item"> College of Computer Science and Technology (CCST),
-             Nanjing University of Aeronautics and Astronautics (NUAA), China
-            </li>
-          </ul>
-        </li>
-      	<li class="item">
-          <a>Master. Sept.2017 - Apr.2020, Software Engineering (supervised by Prof. <a href="https://faculty.nuaa.edu.cn/yangzhibin/zh_CN/index.htm">Zhibin Yang</a>) </a>
-          <ul>
-            <li class="item"> College of Computer Science and Technology (CCST),
-             Nanjing University of Aeronautics and Astronautics (NUAA), China
-            </li>
-          </ul>
-        </li>
-      	<li class="item">
-          <a>PhD. Sept.2020 - Dec.2023, Computer Science (Co-advisors: <a href="https://www.irisa.fr/prive/talpin/">Jean-Pierre Talpin</a> and <a href="https://people.rennes.inria.fr/Frederic.Besson/">Frédéric Besson</a>)</a>
-          <ul>
-            <li class="item"> The Time, Events and Architectures(TEA) team,
-             Université de Rennes / Inria-Rennes, France
-            </li>
-          </ul>
-        </li>
+  <div class="site-layout">
+    <aside class="author-sidebar" aria-label="Author profile">
+      <img class="author-avatar" src="img/profile.jpg" alt="Shenghao Yuan in Rennes" width="172" height="172">
+      <div class="author-info">
+        <h2 class="author-name">Shenghao Yuan</h2>
+        <p class="author-role">Researcher</p>
+        <a class="author-affiliation" href="https://www.zju.edu.cn/english/">Zhejiang University</a>
+        <p class="author-bio">Formal verification of compilers, operating systems, and virtual machines.</p>
+        <div class="author-location"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Hangzhou, China</span></div>
+      </div>
+      <ul class="author-links">
+          <li><a href="mailto:nuaaysh@126.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>Email</span></a></li>
+          <li><a href="https://scholar.google.com/citations?user=jL24x3sAAAAJ&amp;hl=en"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6c4 3 8 3 12 0v-6M22 9v8"/></svg><span>Google Scholar</span></a></li>
+          <li><a href="https://dblp.org/pid/264/2591.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v16M12 5C8 2 3 3 3 3v15s5-1 9 3c4-4 9-3 9-3V3s-5-1-9 2Z"/></svg><span>DBLP</span></a></li>
+          <li><a href="https://github.com/shenghaoyuan"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 20"/></svg><span>GitHub</span></a></li>
+          <li><a href="https://github.com/OpenSourceVerif"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-17a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 4v3"/></svg><span>OpenSourceVerif</span></a></li>
+          <li><a href="https://orcid.org/0000-0002-8467-5827"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 11v6m0-10v.1M12 7h2a5 5 0 0 1 0 10h-2V7Z"/></svg><span>ORCID</span></a></li>
+          <li><a href="https://gitlab.inria.fr/X-Syuan"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h16v12H4zM3 3h18v6H3zM9 13h6"/></svg><span>GitLab <span class="link-note">(read-only)</span></span></a></li>
       </ul>
-      <hr noShade size=3.5>
-      <a name="work"></a>
-      <h3>Work </h3>
-      <ul>
-      	<li class="item">
-          <a>Researcher. May.2024 - Now, Zhejiang University</a>
-          <ul>
-            <li class="item"> State Key Laboratory of Blockchain and Data Security
-            </li>
-            <li class="item"> Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <hr noShade size=3.5>
-      <a name="research"></a>
-      <h3>Serment des docteurs relatif à l'intégrité scientifique (English version: Doctoral Oath on Scientific Integrity; 中文版本: 博士科学诚信誓言)</h3> At the end of the defence and in case of admission, I takes an oath, individually committing myself to respect the principles and requirements of scientific integrity in the rest of my professional career, whatever the sector or area of activity. 
-       <ul>
-        <li class="item">
-          <a><b>The text of the oath is as follows: In the presence of my peers. With the completion of my doctorate in computer science, in my quest for knowledge, I have carried out demanding research, demonstrated intellectual rigour, ethical reflection and respect for the principles of research integrity. As I pursue my professional career, whatever my chosen field, I pledge to the greatest of my ability to continue to maintain integrity in my relationship to knowledge, in my methods and in my results.</b></a>
-        </li>
-      </ul>
-      <h3>Research Interests</h3> I am interested in theorem proving (Rocq, Isabelle/HOL, and Lean4), compiler/OS formal verification, programming language. Especially, <b> eBPF-related verification and Rust contract specification~ </b> <ul>
-      </ul>
-      <h3>Current Research</h3>
+    </aside>
 
-      <ul>
-        <li class="item">
-          <a>Compiler Implementation &  Verification</a>
-          <ul>
-            <li class="item">
-             From Rocq to C [<a href="https://doi.org/10.1007/978-3-031-13188-2_15">CAV'22</a>], From Isabelle/HOL to Rust [<a href="https://github.com/OpenSourceVerif/Isabelle2Rust">repo</a>]
-            </li>
-            <li class="item">
-             JIT (Just-In-Time) Compiler [<a href="https://link.springer.com/chapter/10.1007/978-3-031-65627-9_16">CAV'24</a>]
-            </li>
-            <li class="item">
-             EVM AOT Compiler (TBC)
-            </li>
-          </ul>
-        </li>
-        <li class="item">
-          <a>OS/VM Verification</a>
-          <ul>
-            <li class="item">
-              RIOT-OS rBPF VM [<a href="https://dl.acm.org/doi/abs/10.1145/3528535.3565242">MIDDLEWARE'22</a>], bootloader [<a href="https://ieeexplore.ieee.org/document/9814956">MEMOCODE'21</a>]
-            </li>
-            <li class="item">
-              <a href="https://github.com/solana-labs/rbpf">Solana Blockchain VM</a>  [<a href="https://dl.acm.org/doi/10.1145/3720414">OOPSLA'25</a>]
-            </li>
-            <li class="item">
-              Linux eBPF [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2026.pdf">OOPSLA'26</a>]
-            </li>
-          </ul>
-        <li class="item">
-          <a>Model-driven Development</a>
-          <ul>
-            <li class="item">
-             AADL / Synchronous Language [<a href="https://doi.org/10.1016/j.scico.2021.102644">SCP'21</a>]
-            </li>
-            <li class="item">
-             AADL2Rust [<a href="https://github.com/OpenSourceVerif/aadl2rust">Compiler Prototype</a>]
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <main class="page-content" id="main-content" tabindex="-1">
+      <header class="page-heading">
+        <p class="eyebrow">Formal methods · Programming languages</p>
+        <h1>About me</h1>
+        <p class="lead">I am Shenghao Yuan, a researcher at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>. My research focuses on formal verification of compilers, operating systems, and virtual machines.</p>
+      </header>
 
-      <h3>Action within Practice</h3> Our research should make real-world software better: e.g. find issues, present soluations, and so on~ <ul>
-      </ul>
-      
-      <ul>
-        <li class="item">
-          <a>Linux Patches</a>
-          <ul>
-            <li class="item">
-             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=55c0ced59fe1">bpf: Reject negative offsets for ALU ops</a> <a href="https://www.cve.org/CVERecord?id=CVE-2025-40169">(CVE-2025-40169)</a>
-            </li>
-            <li class="item">
-             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=44fdd581d273">bpf: Add range tracking for BPF_DIV and BPF_MOD</a> and related  <a href="https://git.kernel.org/bpf/bpf-next/c/c9e440bf25a7">selftests</a>
-            </li>
-            <li class="item">
-             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=9d21199842247ab05c675fb9b6c6ca393a5c0024">bpf: Add bitwise tracking for BPF_END</a> and related  <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=56415363e02f0f561ecc5bda6a4318438f888b43">selftests</a> <a href="https://lore.kernel.org/bpf/AMBPR06MB108683CFEB1CB8D9E02FC95ECF17EA@AMBPR06MB10868.eurprd06.prod.outlook.com/">(bad news: introduce another issue; BUT now has been fixed)</a>
-            </li>
-            <li class="item">
-             <a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=4314a44564eb1565349fed7a4192344c5f46fc85">bpf: Fix out-of-bounds read in bpf_patch_call_args()</a>
-            </li>
-          </ul>
-        </li>
-        <li class="item">
-          <a>Solana Issues</a>
-          <ul>
-            <li class="item">
-              <a href="https://github.com/solana-labs/rbpf/issues/562">assembler: register inconsistency</a>
-            </li>
-            <li class="item">
-              <a href="https://github.com/solana-labs/rbpf/issues/563">Interpreter LD_DW_IMM: add !sbpf_version.disable_lddw() checking</a>
-            </li>
-            <li class="item">
-              <a href="https://github.com/anza-xyz/sbpf/pull/78">Cleanup - unused JIT-generated instruction</a> 
-            </li>
-            <li class="item">
-              <a href="https://github.com/anza-xyz/sbpf/pull/68">Feature - Expand X86Instruction::opcode field to to optimize multiplications</a> 
-            </li>
-            <li class="item">
-              <a href="https://github.com/anza-xyz/sbpf/pull/131">Cleanup - Remove unreachable None branch in emit_profile_instruction_count</a> 
-            </li>
-          </ul>
-      </ul>
-      <hr noShade size=3.5>
-      <a name="project"></a>
-      <h3>Projects</h3> I join the <a href="https://trust2proj.github.io/">TRust<sup>2</sup></a> project currently, working on formal verification of Rust. The Solana verification is a part of TRust<sup>2</sup>: the Solana eBPF VM is a real-world Rust case study.
-      <ul>
-        <li class="item">
-          <a>2025-01 to 2025-12: <b>End-to-end formal verification of Solana eBPF JIT Compiler.</b> (<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/projects/solana_jit_rust_overview.png">Overivew</a>) [<a href="https://www.ccf.org.cn/Collaboration/Enterprise_Fund/News/hw/2024-10-31/832702.shtml">2024CCF-Huawei Populus Grove Fund: Formal Method Track (News in Chinese)</a>] </a>
-        </li>
-      </ul>
-      <ul>
-        <li class="item">
-          <a>2025-xx to 2026-xx: <b>Porting an eBPF JIT Compiler to RISC-V for Solana.</b> Open Source Project for Solana [<a href="https://github.com/OpenSourceVerif/Solana-Multi-JITs/tree/riscv">repo</a>] </a>
-        </li>
-      </ul>
-      
-      <hr noShade size=3.5>
-      <a name="publication"></a>
-      <h3>Selected Publications [<a href="https://dblp.org/pid/264/2591.html">DBLP</a>] [<a href="https://scholar.google.com/citations?user=jL24x3sAAAAJ&hl=en">Google Scholar</a>] (* = corresponding author, <sup>+</sup> = equal contributions) </h3>
-      <br> The listed papers are selected based on my role as either <b>first author</b> or <b>corresponding author</b>. In both cases, I bear primary responsibility for and am most familiar with the methodology and technical details of the papers. <br>
-      <br>Perhaps it is often assumed that the future work section in a paper merely outlines ideas that may never be pursued. I would like to clarify that when I discuss future work, I am either <span style="color: red;">actively carrying out those follow-up studies</span> or explaining here why I have chosen to move in a different direction.<br>
-      <ul>
+      <p>I work at the State Key Laboratory of Blockchain and Data Security and the Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security. I am particularly interested in <strong>eBPF-related verification</strong> and <strong>Rust contract specification</strong>.</p>
+      <p>I received my Ph.D. in Computer Science from Université de Rennes / Inria-Rennes in 2023, advised by <a href="https://www.irisa.fr/prive/talpin/">Jean-Pierre Talpin</a> and <a href="https://people.rennes.inria.fr/Frederic.Besson/">Frédéric Besson</a>.</p>
 
-        <li style="margin-bottom: 10px;">
-          <a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/eBPF2026.pdf">[eBPF'26] Formal Specification of Linux eBPF Instruction Set Architecture in Sail</a>
-          <br>Yazhou Tang, <b>Shenghao Yuan*</b>, Jean-Pierre Talpin, Mingshuai Chen* <br>
-           In 4th Workshop on eBPF and Kernel Extensions (CCF-None) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/eBPF2026.pdf">local copy</a>]
-        </li> 
+      <section aria-labelledby="news">
+        <div class="section-heading">
+          <h2 id="news">News</h2>
+          <a href="news.html">View all news &rarr;</a>
+        </div>
+        <!-- Rendered from news-data.js: the first 10 entries, in source order. -->
+        <div id="latest-news">
+          <noscript><p class="section-intro">Enable JavaScript to display the news list.</p></noscript>
+        </div>
+      </section>
 
-        <li style="margin-bottom: 10px;">
-          <a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2026.pdf">[OOPSLA'26] Formalizing the Linux eBPF Core ISA: A Mechanized Operational Semantics and Its Real-World Applications</a>
-          <br><b>Shenghao Yuan</b><sup>+</sup>, Yazhou Tang<sup>+</sup>, Tianci Cao, Frédéric Besson, Jean-Pierre Talpin, Mingshuai Chen* <br>
-           In ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Applications (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2026.pdf">local copy</a>]
-        </li> 
+      <section aria-labelledby="research-overview">
+        <div class="section-heading">
+          <h2 id="research-overview">Research interests</h2>
+          <a href="research.html">Explore research →</a>
+        </div>
+        <ul class="interest-list">
+          <li><strong>Compiler implementation &amp; verification</strong> — verified compilation and just-in-time compilers.</li>
+          <li><strong>OS &amp; virtual machine verification</strong> — from embedded eBPF to Solana and Linux.</li>
+          <li><strong>Theorem proving &amp; programming languages</strong> — Rocq, Isabelle/HOL, Lean 4, and Rust.</li>
+        </ul>
+      </section>
 
-        <li style="margin-bottom: 10px;">
-          <a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/BCRA2026.pdf">[BCRA'26] A RISC-V JIT Backend for Solana eBPF: Enabling Multi-Architecture Deployment of Blockchain Virtual Machines</a>
-          <br>Jun Liu, Jiayi Lu, <b>Shenghao Yuan*</b>, David Sanan, Yongwang Zhao* <br>
-          In the Journal of Blockchain: Research and Applications (CCF-B journal) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/BCRA2026.pdf">local copy</a>]
-        </li> 
+      <section aria-labelledby="featured-publications">
+        <div class="section-heading">
+          <h2 id="featured-publications">Selected publications</h2>
+          <a href="publications.html">View publication list →</a>
+        </div>
+        <!-- Rendered from publications-data.js: the three featured papers. -->
+        <div id="selected-publications">
+          <noscript><p class="section-intro">Enable JavaScript to display the selected publications.</p></noscript>
+        </div>
+      </section>
 
-        <li style="margin-bottom: 10px;">
-          <a href="https://dl.acm.org/doi/10.1145/3720414">[OOPSLA'25] A complete formal semantics of eBPF instruction set architecture for Solana</a>
-          <br><b>Shenghao Yuan</b>, Zhuoruo Zhang, Jiayi Lu, David Sanan, Rui Chang, Yongwang Zhao* <br>
-          In ACM SIGPLAN International Conference on Object-Oriented Programming Systems, Languages, and Applications (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/OOPSLA2025.pdf">local copy</a>]
-        </li> 
+      <section aria-labelledby="research-practice">
+        <div class="section-heading">
+          <h2 id="research-practice">Research in practice</h2>
+          <a href="projects.html">Projects &amp; contributions →</a>
+        </div>
+        <div class="practice-note">
+          <p>Our research should make real-world software better: finding issues and developing solutions.</p>
+          <p>My work includes <a href="projects.html#linux">Linux eBPF patches</a>, <a href="projects.html#solana">Solana VM contributions</a>, and formal verification of Rust through the <a href="https://trust2proj.github.io/">TRust<sup>2</sup> project</a>.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 
-        <li style="margin-bottom: 10px;">
-          <a href="https://link.springer.com/chapter/10.1007/978-981-96-0602-3_11">[SETTA'24] Formalizing x86-64 ISA in Isabelle/HOL: A Binary Semantics for eBPF JIT Correctness</a>
-          <br>Jiayi Lu, <b>Shenghao Yuan*</b>, David Sanan, Yongwang Zhao <br>
-          In 10th Symposium on Dependable Software Engineering: Theories, Tools and Applications (CCF-C conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/SETTA24.pdf">local copy</a>]
-          <br><b>Future Work: </b>Serving for [OOPSLA'25]<br>
-        </li> 
-
-        <li style="margin-bottom: 10px;">
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-65627-9_16">[CAV'24] End-to-end Mechanized Proof of a JIT-accelerated eBPF Virtual Machine for IoT</a>
-          <br><b>Shenghao Yuan*</b>, Frédéric Besson, Jean-Pierre Talpin <br>
-          In 36th International Conference on Computer-Aided Verification (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV2024.pdf">local copy</a>]
-          <br><b>Future Work: </b>No progress. I noticed that EVM and Solana are actually using this hybrid solution, which suggests that a fully JIT-compiled approach may not be strictly necessary. By the way, this was my final work during my Ph.D. <span style="color: red;">After that, I shifted my focus to Solana and Linux eBPF</span>, see [OOPSLA'25,OOPSLA'26]<br>
-        </li> 
-
-        <li style="margin-bottom: 10px;">
-          <a href="https://link.springer.com/chapter/10.1007/978-981-99-8664-4_22">[SETTA'23] Making an eBPF Virtual Machine Faster on Microcontrollers: Verified Optimization and Proof Simplification</a>
-          <br><b>Shenghao Yuan*</b>, Benjamin Lion, Frédéric Besson, Jean-Pierre Talpin <br>
-          In 9th Symposium on Dependable Software Engineering: Theories, Tools and Applications (CCF-C conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/SETTA23_draft.pdf">local copy</a>]
-          <br><b>Future Work:</b>No progress. One reason is that LLM could do something like AutoCorres, and I was interested in Rust after Ph.D.<br>
-        </li>
-
-        <li style="margin-bottom: 10px;">
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-13188-2_15">[CAV'22] End-to-end Mechanised Proof of an eBPF Virtual Machine for Microcontrollers</a>
-          <br><b>Shenghao Yuan*</b>, Frédéric Besson, Jean-Pierre Talpin, Samuel Hym, Koen Zandberg, Emmanuel Baccelli <br>
-          In 34th International Conference on Computer-Aided Verification (CCF-A conf) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV2022.pdf">local copy</a>] [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/CAV22_0809.pptx">slide</a>]
-          <br><b>Future Work:</b> <span style="color: red;">Working on verified eBPF JIT</span>, see [CAV'24] <br>
-        </li> 
-
-        <!-- <li style="margin-bottom: 10px;">
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S016764232100037X">[SCP2021] Multi-task Ada code generation from synchronous dataflow programs on multi-core: Approach and industrial study</a>
-          <br>Zhibin Yang*, <b>Shenghao Yuan</b>, Jean-Paul Bodeveix, Mamoun Filali, Tiexin Wang, Yong Zhou <br>
-          Science of Computer Programming (CCF-B journal) [<a href="https://github.com/shenghaoyuan/shenghaoyuan.github.io/blob/master/publications/scpmain.pdf">local copy</a>]
-          <br><b>Future Work:</b> No progress. as I have since shifted my focus to my PhD topic, and no one else has shown interest in pursuing this line of work.<br>
-        </li>  -->
-      </ul>
-    <hr noShade size=3.5>
-    <a name="xxx"></a> Visitors: <span id="busuanzi_value_site_pv"></span>
-    
-  <p align="center">
-  <a href="https://clustrmaps.com/site/1c34d" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=TTJIp2Z710NHOwDUNesA6uMqU3dX8kAJiL7b36c4rK0&cl=ffffff"></a>
-  </p>
-
-  </body>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© Shenghao Yuan · Zhejiang University</p>
+      <div class="footer-links">
+        <a href="mailto:nuaaysh@126.com">Contact</a>
+        <a href="https://github.com/shenghaoyuan">GitHub</a>
+        <span id="busuanzi_container_site_pv" style="display: none;">Visits: <span id="busuanzi_value_site_pv"></span></span>
+      </div>
+    </div>
+    <details class="visitor-map">
+      <summary>Visitor map</summary>
+      <a href="https://clustrmaps.com/site/1c34d" title="Visit tracker"><img src="https://www.clustrmaps.com/map_v2.png?d=TTJIp2Z710NHOwDUNesA6uMqU3dX8kAJiL7b36c4rK0&amp;cl=ffffff" alt="Map of website visitors" loading="lazy" width="280"></a>
+    </details>
+  </footer>
+</body>
 </html>
-
-              <!--
-        <li class="item">
-          <a href=" https://openpal.github.io/TypeAndProof/">Type and proof (unfinished tutorial)</a>
-        </li>
-
-                    -->
