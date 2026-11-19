@@ -14,7 +14,7 @@ hosting setup.
 | `news.html` | Complete news list, rendered from shared data |
 | `research.html` | Research interests and current research directions |
 | `publications.html` | Selected papers by year, PDFs, slides, and follow-up notes |
-| `projects.html` | Research project directory, Linux patches, and Solana contributions |
+| `projects.html` | Research project directory, Linux and LLVM patches, and Solana contributions |
 | `projects/solana-jit-verification.html` | Solana eBPF JIT verification project, overview, and related publications |
 | `projects/solana-riscv-jit.html` | Solana RISC-V JIT project, overview, source code, and related publication |
 | `photos.html` | Through the years: photos grouped by year |

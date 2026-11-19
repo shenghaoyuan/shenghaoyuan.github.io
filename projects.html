@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects &amp; Open Source | Shenghao Yuan</title>
-  <meta name="description" content="Research projects and open-source contributions to Linux eBPF, Solana, and verified Rust software.">
+  <meta name="description" content="Research projects and open-source contributions to Linux eBPF, LLVM, Solana, and verified Rust software.">
   <link rel="canonical" href="https://shenghaoyuan.github.io/projects.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Projects &amp; Open Source | Shenghao Yuan">
-  <meta property="og:description" content="Research projects and open-source contributions to Linux eBPF, Solana, and verified Rust software.">
+  <meta property="og:description" content="Research projects and open-source contributions to Linux eBPF, LLVM, Solana, and verified Rust software.">
   <meta property="og:url" content="https://shenghaoyuan.github.io/projects.html">
   <meta property="og:image" content="https://shenghaoyuan.github.io/img/profile.jpg">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -106,6 +106,10 @@
         <h2 id="linux">Linux patches</h2>
         <ul class="contribution-list">
           <li>
+            <h3><a href="https://lore.kernel.org/bpf/179339942108.1805657.18318494661899085326.git-patchwork-notify@kernel.org/">bpf: Add UHMUL and SHMUL instructions</a></h3>
+            <p>Unsigned and signed high-half multiplication for the BPF ISA, with interpreter, verifier, and JIT support for x86-64, arm64, and RISC-V.</p>
+          </li>
+          <li>
             <h3><a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/commit/?id=55c0ced59fe1">bpf: Reject negative offsets for ALU ops</a></h3>
             <p>Related vulnerability record: <a href="https://www.cve.org/CVERecord?id=CVE-2025-40169">CVE-2025-40169</a>.</p>
           </li>
@@ -124,6 +128,16 @@
           <li>
             <h3><a href="https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=4191e4932083091534573c20ceed517d8dd480c1">Simplify min()/max(), contains() and normalize() cnum implementation</a></h3>
             <p>Simplification of the cnum implementation.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="llvm">
+        <h2 id="llvm">LLVM patches</h2>
+        <ul class="contribution-list">
+          <li>
+            <h3><a href="https://github.com/llvm/llvm-project/pull/234076">[BPF] Add UHMUL and SHMUL instruction variants with -mcpu=v5</a></h3>
+            <p>LLVM support for unsigned and signed high-half multiplication in the BPF backend, including assembly, disassembly, and instruction selection. Merged on <time datetime="2026-10-23">October 23, 2026</time>.</p>
           </li>
         </ul>
       </section>
